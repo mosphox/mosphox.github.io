@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#container {
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+#container::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.1s ease-in,     /* quick fade out */
+    transform 0.1s ease-in;   /* quick move out */
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.8s ease-out,    /* slow fade in */
+    transform 0.8s ease-out;  /* slow move in */
+}
+
+#typed-text {
+  white-space: nowrap;
+  border-right: .15em solid white;
+  animation: blink-caret .75s step-end infinite;
+}
+
+#typed-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
