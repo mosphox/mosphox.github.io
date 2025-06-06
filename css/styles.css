@@ -10,7 +10,7 @@ html, body {
   background: black;
 }
 
-#particles-js {
+#particles {
   position: fixed;
   top: 0;
   left: 0;
@@ -48,33 +48,72 @@ section {
   opacity: 0;
   transform: translateY(10px);
   transition:
-    opacity 0.1s ease-in,     /* quick fade out */
-    transform 0.1s ease-in;   /* quick move out */
+    opacity 0.1s ease-in,
+    transform 0.1s ease-in;
 }
 
 section.active {
   opacity: 1;
   transform: translateY(0);
   transition:
-    opacity 0.8s ease-out,    /* slow fade in */
-    transform 0.8s ease-out;  /* slow move in */
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
 }
 
-#typed-text {
-  white-space: nowrap;
-  border-right: .15em solid white;
-  animation: blink-caret .75s step-end infinite;
-}
-
-#typed-text {
+#maintyped {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: clamp(0.5rem, min(4vw, 20vh), 5rem);
   color: white;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
+.typed-cursor {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.5rem, min(4vw, 20vh), 5rem);
+  color: white;
+  display: inline;
+  animation: blink-caret .75s step-end infinite;
 }
 
+@keyframes blink-caret {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+/* Rainbow colors here (rbw - rainbow) */
+.rbwred { color: #ff4b4b; } /* red */
+.rbworg { color: #ffaa00; } /* orange */
+.rbwyel { color: #ffe600; } /* yellow */
+.rbwgrn { color: #3cff00; } /* green */
+.rbwltb { color: #00cfff; } /* light blue */
+.rbwblu { color: #1e90ff; } /* blue */
+.rbwpur { color: #c346ff; } /* purple */
+
+/* Reds & Hot Oranges */
+.firebl { color: #c51030; }  /* blazing inferno red */
+.rosesp { color: #fd5959; }  /* spicy rosé slap */
+.apricn { color: #ff9a3c; }  /* ripe apricot punch */
+.tanglo { color: #fa9856; }  /* tangy tangerine squeeze */
+.sunset { color: #ffa952; }  /* orange you glad it’s pastel? */
+
+/* Warm Yellows */
+.chedda { color: #ffc93c; }  /* melty cheese optimism */
+.dijony { color: #fecd51; }  /* mustard with a diploma */
+.honeyg { color: #f8b500; }  /* golden honey fuel */
+.melonx { color: #fabc60; }  /* soft melon butter */
+.chicky { color: #f6c667; }  /* scrambled sunshine joy */
+.lemonz { color: #f7ec77; }  /* radioactive lemonade */
+
+/* Lime to Leafy Greens */
+.limoon { color: #cbf078; }  /* zesty lime sorbet */
+.greenz { color: #a2c11c; }  /* freshly mowed danger */
+.mintyf { color: #bad8b6; }  /* minty grandma wallpaper */
+.herbal { color: #74b49b; }  /* garden hipster sage */
+.mossyy { color: #61b390; }  /* forest intern suit */
+
+/* Teals to Blues */
+.aquair { color: #36d1c4; }  /* mint mojito with wi-fi */
+.skyblu { color: #8dc6ff; }  /* polite daytime sky */
+.cloudy { color: #cadefc; }  /* socially anxious cloud */
+.coasty { color: #73b1c1; }  /* ocean breeze, tax deductible */

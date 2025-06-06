@@ -1,31 +1,91 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mosphox</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <div id="particles-js"></div>
-  <div id="container">
-    <section id="1">
-      <div id="typed-text"></div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section id="2">
-      <div class="content">Section 2</div>
-    </section>
+    <title>mosphox</title>
 
-    <section id="3">
-      <div class="content">Section 3</div>
-    </section>
-  </div>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
 
-  <script src="js/particles.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/typing.js"></script>
-</body>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="assets/icons/favicon-196x196.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicon-512x512.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mosphox.css" />
+
+  </head>
+  <body>
+    <div id="particles"></div>
+
+    <div id="container">
+      <section id="1">
+        <h1 id="maintyped"></h1>
+      </section>
+      <section id="2">
+        <h1 class="title">@mosphox
+          <div class="aurora">
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+          </div>
+        </h1>
+      </section>
+      <section id="3">
+        <div class="content">Section 3</div>
+      </section>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/typed/typed.umd.js"></script>
+    <script src="js/spanify.js"></script>
+    <script src="js/cursor.js"></script>
+    <script>
+      new Typed('#maintyped', {
+        strings: [
+          spanify("Best served with <R>rbwred<G>rbwgrn<B>rbwblu colors"),
+          spanify("Fear me if you <dare>sunset"),
+          spanify("<Pathetic>honeyg"),
+          spanify("Every commit a <confession>rbwred"),
+          spanify("Feature requests go straight to </dev/null>apricn"),
+          spanify("Abandon <hope>aquair, all ye who <deploy>aquair"),
+          spanify("404: <dignity>mossyy not found"),
+          spanify("It compiles. <Ship>apricn it"),
+          spanify("Refactored <beyond>skyblu recognition"),
+          spanify("Do not <taunt>firebl the codebase"),
+          spanify("Do not <feed>honeyg after midnight"),
+          spanify("Some rights very <much>chedda reserved"),
+          spanify("Made with <love>firebl and <zero>firebl planning"),
+          spanify("May cause side <effects>sunset in prod"),
+          spanify("Started as a joke. <Still>chedda is."),
+          spanify("This was a <group>melonx decision. Sorry"),
+          spanify("Objects in code may be <cursed>apricn"),
+          spanify("Built for <speed>dijony, not <accuracy>dijony"),
+          spanify("Runs on <dreams>herbal and <duct>herbal tape"),
+          spanify("Some features <sold>honeyg separately"),
+          spanify("Git <committed>aquair. Should’ve been"),
+          spanify("This code has seen <things>tanglo"),
+          spanify("Built <different>honeyg. Like… <incorrectly>honeyg"),
+          spanify("Do not <inhale>apricn the stack trace"),
+          spanify("Oh, look: a <R>rbwred<A>rbworg<I>rbwyel<N>rbwgrn<B>rbwltb<O>rbwblu<W>rbwpur"),
+        ],
+
+        typeSpeed: 3,
+        backSpeed: 3,
+        startDelay: 0,
+        backDelay: 1000,
+        loop: true,
+        shuffle: true,
+        showCursor: true,
+        cursorChar: '_',
+        html: true
+      });
+    </script>
+  </body>
 </html>

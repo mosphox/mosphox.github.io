@@ -1540,7 +1540,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 };
 
-particlesJS('particles-js', {
+particlesJS('particles', {
   "particles": {
     "number": {
       "value": 80,
