@@ -90,30 +90,18 @@ section.active {
 .rbwblu { color: #1e90ff; } /* blue */
 .rbwpur { color: #c346ff; } /* purple */
 
-/* Reds & Hot Oranges */
-.firebl { color: #c51030; }  /* blazing inferno red */
-.rosesp { color: #fd5959; }  /* spicy rosé slap */
-.apricn { color: #ff9a3c; }  /* ripe apricot punch */
-.tanglo { color: #fa9856; }  /* tangy tangerine squeeze */
-.sunset { color: #ffa952; }  /* orange you glad it’s pastel? */
-
-/* Warm Yellows */
-.chedda { color: #ffc93c; }  /* melty cheese optimism */
-.dijony { color: #fecd51; }  /* mustard with a diploma */
-.honeyg { color: #f8b500; }  /* golden honey fuel */
-.melonx { color: #fabc60; }  /* soft melon butter */
-.chicky { color: #f6c667; }  /* scrambled sunshine joy */
-.lemonz { color: #f7ec77; }  /* radioactive lemonade */
-
-/* Lime to Leafy Greens */
-.limoon { color: #cbf078; }  /* zesty lime sorbet */
-.greenz { color: #a2c11c; }  /* freshly mowed danger */
-.mintyf { color: #bad8b6; }  /* minty grandma wallpaper */
-.herbal { color: #74b49b; }  /* garden hipster sage */
-.mossyy { color: #61b390; }  /* forest intern suit */
-
-/* Teals to Blues */
-.aquair { color: #36d1c4; }  /* mint mojito with wi-fi */
-.skyblu { color: #8dc6ff; }  /* polite daytime sky */
-.cloudy { color: #cadefc; }  /* socially anxious cloud */
-.coasty { color: #73b1c1; }  /* ocean breeze, tax deductible */
+/* Main page typing colors */
+.hexred { color: #c92a2a; }
+.crimzn { color: #e63946; }
+.emberx { color: #ff6f61; }
+.zestor { color: #f77f00; }
+.flammo { color: #ff703f; }
+.yolkoo { color: #ffcc00; }
+.meltup { color: #ffe600; }
+.torchy { color: #ffd000; }
+.sunnyy { color: #f4d35e; }
+.virusy { color: #fce205; }
+.neomnt { color: #2fe388; }
+.discbl { color: #7289fa; }
+.voidfx { color: #a66cff; }
+.coldst { color: #6e7f8d; }
