@@ -1,0 +1,90 @@
+/* Define root-level custom properties (CSS variables) for colors */
+:root {
+  --text-color: #ffffff; /* Sets text color to white for high contrast on dark bg */
+  --bg-color: #000000;   /* Sets background to pure black for that void-core aesthetic */
+}
+
+/* Reset and base styles */
+body {
+  margin: 0; /* Removes default margin to make slides take full space */
+  padding: 0; /* Ensures no padding ruins our layout */
+  background-color: var(--bg-color); /* Apply the dark background from variable */
+  overflow: hidden; /* Prevents scrolling entirely */
+}
+
+#container {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* Style for each slide section */
+.slide {
+  width: 100vw; /* Make slide take full viewport width */
+  height: 100vh; /* Make slide take full viewport height */
+  display: flex; /* Enable flexbox to center content */
+  flex-direction: column; /* Stack children vertically (h1, p, etc.) */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align text inside elements */
+  box-sizing: border-box; /* Ensures padding/border don’t mess with dimensions */
+  padding: 2rem; /* Add breathing room so text doesn’t hug the edge */
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  transform: translateY(0); /* always ends at 0 */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateY(0); /* snaps into place after animation */
+  pointer-events: auto;
+}
+
+@keyframes slide-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-fade-out-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes slide-fade-out-up {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+}

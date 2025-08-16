@@ -1,0 +1,24 @@
+#typed {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.typed-cursor {
+  display: inline;
+  animation: blink 0.7s infinite;
+}
+
+#typed,
+.typed-cursor {
+  color: var(--text-color);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+
+  font-size: clamp(1rem, 5vw, 5rem);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
